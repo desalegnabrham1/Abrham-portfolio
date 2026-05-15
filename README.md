@@ -1,76 +1,63 @@
-<h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a>
-</h2>
-<div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
-</div>
+# Portfolio
 
-<br/>
+A clean, responsive React portfolio site. This README explains how to run the project locally, add your resume PDF, and deploy to Vercel.
 
-<center>
+## Overview
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/soumyajit4419/Portfolio?color=red&logo=github&style=for-the-badge)
+This project is a Create React App-based portfolio with pages for Home, About, Projects, Contact and Resume. Static assets placed in the `public/` folder (like `resume.pdf`) are served directly at the site root.
 
-</center>
+## Add Your Resume
 
-<h3 align="center">
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Request Feature</a>
-</h3>
+Place your PDF file in `public/` and name it `resume.pdf`. The app links to `/resume.pdf`.
 
-## TL;DR
+PowerShell example:
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Soumyajit4419](https://github.com/soumyajit4419/Portfolio). Thanks!
+```powershell
+Copy-Item 'C:\path\to\YourResume.pdf' 'C:\Projects\Portfolio\public\resume.pdf'
+```
 
-## Built With
+There is a helper file at `public/ADD_RESUME.md` with the same instructions.
 
-My personal portfolio <a href="https://soumyajit.vercel.app/" target="_blank">soumyajit.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
+## Quick Start (Local)
 
-This project was built using these technologies.
+Install dependencies and start the dev server:
 
-- React.js
-- Node.js
-- Express.js
-- CSS3
-- VsCode
-- Vercel
+```bash
+npm install
+npm start
+```
 
-## Features
+Open http://localhost:3000 to view the site. Changes in `src/` reload automatically.
 
-**📖 Multi-Page Layout**
+## Build
 
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
+Create an optimized production build:
 
-**📱 Fully Responsive**
+```bash
+npm run build
+```
 
-## Getting Started
+The `build/` folder is ready to be served by any static host.
 
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+## Deploy to Vercel
 
-## 🛠 Installation and Setup Instructions
+Recommended: push the repository to GitHub (or GitLab/Bitbucket) and import it in Vercel. Suggested settings (Vercel usually detects these):
 
-1. Installation: `npm install`
+- Build Command: `npm run build`
+- Output Directory: `build`
 
-2. In the project directory, you can run: `npm start`
+Alternatively use the Vercel CLI:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
+```bash
+npm i -g vercel
+vercel --prod
+```
 
-## Usage Instructions
+After deployment your resume will be available at `https://<your-site>/resume.pdf`.
 
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
+## Notes
 
-### Show your support
+- If you prefer the resume to be bundled with the app instead of served from `public/`, move the PDF into `src/Assets/` and import it from components.
+- Make sure filenames match exactly (case-sensitive on many hosts).
 
-Give a ⭐ if you like this website!
-
-<a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+If you want, tell me the full local path to your resume PDF and I will copy it into `public/` and add a Navbar link for you.

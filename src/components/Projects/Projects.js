@@ -24,7 +24,7 @@ function Projects() {
               isBlog={false}
               title="TaskFlow"
               description="A task management application built with React.js and Firebase. It allows users to create, update, and delete tasks, set deadlines, and track progress."
-              ghLink="https://github.com/yourname/TaskFlow"
+              ghLink="https://github.com/desalegnabrham1/Taskflow-pro"
               />
           </Col>
           <Col md={4} className="project-card">
@@ -33,7 +33,7 @@ function Projects() {
               isBlog={false}
               title="InternMatch"
               description="InternMatch is a Flutter and Firebase-based mobile app that helps students find and apply for internships while allowing companies to post and manage internship opportunities."
-              ghLink="https://github.com/yourname/InternMatch"
+              ghLink="https://github.com/desalegnabrham1/InternMatch_app"
               
             />
           </Col>
@@ -44,7 +44,7 @@ function Projects() {
               isBlog={false}
               title="Online Quiz App"
               description="An online quiz management system built with PHP, MySQL, HTML, CSS, and JavaScript. It lets teachers create quizzes, students take timed exams, and admins view results and reports."
-              ghLink="https://github.com/yourname/QuizApp"
+              ghLink="https://github.com/desalegnabrham1/Online-Quiz-Management-System"
               
             />
           </Col>
