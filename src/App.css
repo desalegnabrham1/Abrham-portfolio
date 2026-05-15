@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+.img-fluid.logo {
+  height: 80px !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+
+.container.home-section {
+  padding-bottom: 0 !important;
+  margin-bottom: -1000px !important;
+}
+
+.container.home-about-section {
+  padding-top: 0 !important;
+  margin-top: -500px !important;
+}
+
+.home-section,
+.home-about-section {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+
+
+.contact-section {
+  min-height: 90vh;
+  padding: 50px 0;
+  color: white;
+}
+
+.contact-content {
+  text-align: center;
+}
+
+.contact-info {
+  margin-top: 30px;
+  font-size: 1.2em;
+}
+
+.contact-info p {
+  margin: 15px 0;
+}
+
+
+/* Add space between navbar and content */
+.contact-section {
+  margin-top: 80px !important;
+  padding-top: 50px !important;
+}
+
+/* Also add space for all sections */
+.home-section, .about-section, .project-section, .resume-section {
+  margin-top: 80px !important;
+}
+
+/* Reduce navbar bottom margin */
+.navbar {
+  margin-bottom: 0 !important;
+}
+
+.contact-link {
+  color: #c084f5 !important;
+  text-decoration: none !important;
+  transition: color 0.3s ease;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+}
+
+.contact-link:hover {
+  color: #ffffff !important;
+  text-decoration: underline !important;
+}
+
+/* Ensure links are clickable */
+.contact-info a {
+  position: relative !important;
+  z-index: 10 !important;
+}
