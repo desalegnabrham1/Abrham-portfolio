@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { SiNextdotjs, SiSolidity } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
 import C from "../../Assets/TechIcons/C++.svg";
 import Javascript from "../../Assets/TechIcons/Javascript.svg";
 import Node from "../../Assets/TechIcons/Node.svg";

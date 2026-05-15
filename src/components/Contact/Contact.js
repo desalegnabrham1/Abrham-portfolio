@@ -14,7 +14,7 @@ function Contact() {
                 Contact <strong className="purple">Me</strong>
               </h1>
             <div className="contact-info">
-              <p><strong>Email:</strong> <a href="mailto:desalegnabrham1@gmail.com" target="_blank" className="contact-link">desalegnabrham1@gmail.com</a></p>
+              <p><strong>Email:</strong> <a href="mailto:desalegnabrham1@gmail.com" target="_blank" rel="noreferrer" className="contact-link">desalegnabrham1@gmail.com</a></p>
               <p><strong>Phone:</strong> <a href="tel:+251986826610" className="contact-link">+251986826610</a></p>
               <p><strong>Location:</strong> Bahirdar, Ethiopia</p>
             </div>
